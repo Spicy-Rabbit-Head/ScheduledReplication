@@ -1,6 +1,6 @@
 ﻿using ScheduledReplication.Tools;
 
-namespace ScheduledReplication;
+namespace ScheduledReplication.Entity;
 
 public class FilePath : ObservableObject
 {

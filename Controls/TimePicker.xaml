@@ -3,11 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:ScheduledReplication.Controls"
-             mc:Ignorable="d"
-             d:DesignHeight="300"
-             d:DesignWidth="300">
-    <Grid>
-        
-    </Grid>
+             mc:Ignorable="d">
+    <Viewbox Stretch="Uniform">
+        <Grid>
+            <StackPanel Orientation="Horizontal">
+                <ComboBox VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          MaxDropDownHeight="140"
+                          x:Name="HourComboBox"
+                          DropDownClosed="TimeSelection"
+                          SelectedIndex="0" />
+                <TextBlock Margin="5">:</TextBlock>
+                <ComboBox VerticalAlignment="Center"
+                          HorizontalAlignment="Center"
+                          MaxDropDownHeight="140"
+                          x:Name="MinutesComboBox"
+                          DropDownClosed="TimeSelection"
+                          SelectedIndex="0" />
+            </StackPanel>
+        </Grid>
+    </Viewbox>
 </UserControl>

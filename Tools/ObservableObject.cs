@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Runtime.CompilerServices;
 
-namespace EquipmentRandomTesting.Tools;
+namespace ScheduledReplication.Tools;
 
 /// <summary>
 /// 可观察对象
 /// </summary>
-public class ObservableObject : INotifyPropertyChanged
+public class ObservableObject : ConfigurationSection, INotifyPropertyChanged
 {
     /// <summary>
     /// 属性改变事件

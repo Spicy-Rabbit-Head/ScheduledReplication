@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace EquipmentRandomTesting.Tools;
+namespace ScheduledReplication.Tools;
 
 public class ObservableCommand<T> : ICommand
 {
